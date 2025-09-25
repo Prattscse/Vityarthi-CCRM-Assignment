@@ -30,30 +30,7 @@ Concepts: Encapsulation, Inheritance, Abstraction, Polymorphism, Interfaces, Nes
 APIs & Utilities: Java Date/Time API, NIO.2, Streams, Assertions
 
 
-📂 Deliverables
 
-Source code with runnable Main class.
-
-README.md with:
-
-Evolution of Java (timeline).
-
-Java ME vs SE vs EE comparison.
-
-JDK, JRE, JVM explained.
-
-Windows install & Eclipse setup (with screenshots).
-
-Mapping table: syllabus topics → implemented classes/methods.
-
-Notes on enabling assertions.
-
-
-Screenshots folder (installation, IDE setup, program runs, exports/backups).
-
-Sample data files for import/export.
-
-Optional demo video link (project walkthrough).
 
 
 
