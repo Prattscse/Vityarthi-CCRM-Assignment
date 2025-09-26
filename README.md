@@ -1,97 +1,76 @@
+Campus Course & Records Manager (CCRM)
+A console-based student and course management system built with modern Java SE.
 
-#Campus Course & Records Manager (CCRM)
+CCRM is a comprehensive, console-based application designed to help an educational institute manage students, courses, enrollments, and academic records. Built entirely in Java, this project serves as a practical demonstration of core Java principles, Object-Oriented Programming, and modern Java APIs like Streams and NIO.2.
 
-A console-based Java SE application for managing students, courses, enrollments, grades, and transcripts in a university setting.
-This project demonstrates core Java concepts (OOP pillars, exception handling, collections, streams, NIO.2 file operations, recursion, enums, lambdas, and design patterns like Singleton & Builder) while offering practical features like data import/export, backup utilities, and transcript generation.
+✨ Key Features
+👨‍🎓 Student Management: Add, update, view, and list student profiles.
 
-✨ Features
+📚 Course Administration: Create, update, and search for courses. Assign instructors and manage course details.
 
-Student Management – Create, update, list, and deactivate students; generate profiles & transcripts.
+📝 Enrollment & Grading: Enroll students in courses, record marks, and generate academic transcripts with GPA calculations.
 
-Course Management – Add, update, search, and filter courses by department, semester, or instructor.
+💾 Data Operations: Import and export data from/to text files, and create timestamped backups of all application data.
 
-Enrollment & Grading – Enroll/unenroll students with rules (e.g., max credits/semester), compute GPA, and record letter grades.
-
-File Operations – Import/export data using CSV/text files, create timestamped backups, and recursive directory utilities.
-
-Reports – Stream-based GPA distribution and top student reports.
-
-CLI Workflow – Menu-driven interface covering all operations.
-
-
-🛠 Tech Stack
-
-Language: Java SE
-
-Architecture: Modular packages (cli, domain, service, io, util, config)
-
-Concepts: Encapsulation, Inheritance, Abstraction, Polymorphism, Interfaces, Nested Classes, Lambdas, Enums
-
-APIs & Utilities: Java Date/Time API, NIO.2, Streams, Assertions
-
- Java Platform & Architecture Explained
-This document provides a clear breakdown of the different Java editions and the core components of its architecture.
-
-Java Editions: ME vs. SE vs. EE
-Java isn't a single entity; it's a platform that comes in different editions, each tailored for specific types of applications.
-
-Java SE (Standard Edition) 🖥️
-This is the core Java platform. It provides the fundamental APIs (for collections, networking, I/O, etc.) and the Java Virtual Machine (JVM). If you're building a desktop or console application, you're using Java SE.
-
-Analogy: Think of it as the foundation and frame of a house. It's the essential structure upon which everything else is built.
-
-Java EE (Enterprise Edition) / Jakarta EE 🌐
-Now known as Jakarta EE, this edition is built on top of Java SE. It adds a vast library of APIs needed for building large-scale, multi-tiered, and reliable network applications. This is the choice for web services, banking applications, and complex business systems.
-
-
-Analogy: This is the fully-equipped house, complete with industrial-grade plumbing, electrical systems, and security (Servlets, JavaServer Pages, Enterprise Beans).
-
-Java ME (Micro Edition) 📱
-This is a lightweight, stripped-down subset of Java SE. It’s designed for resource-constrained devices like IoT sensors, smart cards, and older mobile devices. It provides a small-footprint JVM and a limited set of APIs tailored for low memory and power consumption.
-
-Analogy: This is a smart home sensor or a tiny cabin. It’s highly specialized, efficient, and contains only what is absolutely necessary to perform its function.
-
-Comparison Summary
-Feature	Java ME (Micro Edition)	Java SE (Standard Edition)	Java EE (Enterprise Edition)
-Target	Small, resource-constrained devices (IoT, etc.)	Desktop, server, console applications	Large-scale, distributed enterprise systems (web apps)
-Scope	Subset of SE	Core platform	Superset of SE
-Key APIs	Lightweight UI, specific I/O, security for small devices	Core APIs (Collections, I/O, Swing)	Servlets, JSP, Enterprise Beans (EJB), JMS, REST APIs
+📊 Simple Reporting: Generate basic reports, like GPA distribution or course listings by department.
 
 Export to Sheets
-Java Architecture: JDK vs. JRE vs. JVM
-These three acronyms represent the nested components of the Java platform. They are the machinery that makes Java work.
+Data Export	Backup Folder
+Your data export screenshot here	Your backup folder screenshot here
 
-JVM (Java Virtual Machine) ⚙️
-The JVM is the heart of the Java platform. It's an abstract computing machine that enables a computer to run a Java program. When you compile your Java code, it's turned into bytecode, which is a set of instructions for the JVM. The JVM then translates this bytecode into native machine code for the specific operating system it's running on. This is the key to Java's "write once, run anywhere" principle.
+Export to Sheets
+💻 Technology Stack
+Language: Java SE 17
 
+Build Tool: Maven
 
+Core APIs:
 
+java.nio (NIO.2) for modern file operations
 
-Analogy: The JVM is like a universal video game console engine. Game developers create games (bytecode) for the engine, and the engine itself is adapted to work on any TV (operating system).
+java.util.stream (Streams API) for efficient data processing
 
-JRE (Java Runtime Environment) 🏃
-The JRE is the software package that provides everything needed to run Java applications on your machine. It includes the JVM plus the Java Class Libraries—a set of standard code (like String, List, etc.) that your program can use. You need the JRE installed to run any Java application.
+java.time (Date/Time API) for reliable date and time handling
 
-Analogy: The JRE is the game console engine (JVM) bundled with the essential game assets and libraries (like graphics renderers and sound engines) that all games need to function.
+🚀 Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-JDK (Java Development Kit) 🛠️
-The JDK is the full development package for Java programmers. It contains everything the JRE has, plus the development tools necessary to create Java applications. The most important tools are the compiler (javac), the archiver (jar), and the debugger (jdb). If you want to write Java code, you need the JDK.
+Prerequisites
+Make sure you have the following software installed:
 
-Analogy: The JDK is the complete game developer's studio kit. It includes the console and its essential libraries (JRE) plus all the software needed to create a new game from scratch (compiler, debugger).
+Git
 
-The Relationship
-The relationship is simple:
-JDK contains JRE, which in turn contains JVM.
+Java Development Kit (JDK) - Version 17 or higher
 
-JDK = JRE + Development Tools
-JRE = JVM + Core Libraries
+Apache Maven
 
+An IDE like Eclipse or IntelliJ IDEA is recommended.
 
+Installation & Running
+Clone the repository:
+git clone https://github.com/Prattscse/Vityarthi-CCRM-Assignment
+cd Vityarthi-CCRM-Assignment
+Open in your IDE:
 
+Open your preferred IDE (e.g., Eclipse or IntelliJ).
 
+Import the cloned folder as an "Existing Maven Project".
 
+Your IDE will automatically detect the pom.xml file and download all necessary dependencies.
 
----
+Run the application:
 
-👉 Perfect for learning Java SE and showcasing software engineering best practices in a structured project.
+Navigate to the main class located at src/main/java/edu/ccrm/cli/Main.java.
 
+Right-click on the Main.java file and select "Run". The application menu will appear in your console.
+
+📋 How to Use
+The application is fully operated through a simple, menu-driven command-line interface.
+
+On startup, you will be presented with the main menu.
+
+Enter the number corresponding to your desired action (e.g., 1 for Student Management) and press Enter.
+
+Follow the on-screen prompts to perform various operations like adding students, creating courses, or enrolling students.
+
+To test the data import feature, sample data files are provided in the /test-data directory. You can import them using the "Data Utilities" option in the main menu.
